@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+//#470000
 
 const config: Config = {
   content: [
@@ -11,6 +12,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        card: "#4c2c22",
+        textFooter: "#470000",
       },
     },
   },
