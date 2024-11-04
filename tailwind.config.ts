@@ -14,6 +14,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         card: "#4c2c22",
         textFooter: "#470000",
+        overlay: "#00000080"
       },
     },
   },
