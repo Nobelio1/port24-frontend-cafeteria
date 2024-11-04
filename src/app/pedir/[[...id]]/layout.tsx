@@ -11,7 +11,7 @@ export default function StoreLayout({
 }: {
  children: React.ReactNode;
 }) {
-  const [product, setProduct] = useState(false) //cambio de indicador
+  const [product, _setProduct] = useState(false) //cambio de indicador
 
   return (
     <div className="container md:max-w-[1200px] mx-auto">
