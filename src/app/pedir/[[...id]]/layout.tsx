@@ -11,14 +11,16 @@ export default function StoreLayout({
 }: {
  children: React.ReactNode;
 }) {
-  const [product, _setProduct] = useState(false) //cambio de indicador
+  const [product, ] = useState(false)
+
+  
 
   return (
     <div className="container md:max-w-[1200px] mx-auto">
       <div className="md:hidden">
         <ShoppingCartMobile/>
       </div>
-      <div className="w-full">
+      <div className="w-full md:flex">
         <div className="md:w-2/3">
           <FilterProducts/>
           <Products/> 
