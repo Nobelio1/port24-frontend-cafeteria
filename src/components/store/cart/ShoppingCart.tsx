@@ -1,4 +1,5 @@
 import { SlLocationPin } from "react-icons/sl";
+import ShoppingCartCard from "./ShoppingCartCard";
 
 export default function ShoppingCart() {
   return (
@@ -24,16 +25,30 @@ export default function ShoppingCart() {
         </div>
       </div>
       <div className="flex-1 overflow-y-auto">
-        <div className="full-w flex-row justify-center text-center p-6">
+        {/* <div className="full-w flex-row justify-center text-center p-6">
           <h5 className="flex-1 break-normal text-base font-semibold">
             ¡Arma tu carrito ahora!
           </h5>
           <p className="flex-1 break-normal font-light text-sm">
             Los productos que agregues aparecerán aquí
           </p>
+        </div> */}
+
+        <div className="flex flex-col divide-y divide-solid divide-gray-200 overflow-auto px-3 dark:divide-zinc-300">
+          <ShoppingCartCard />
+          <ShoppingCartCard />
         </div>
       </div>
-      <div className="flex-initial flex-col align-center border-t dark:border-zinc-300"></div>
+      <div className="flex-initial flex-col align-center border-t dark:border-zinc-300">
+        <div className="mx-2 font-semibold flex justify-between py-4 text-sm">
+          <span>Subtotal</span>
+          <span>S/ 22.50</span>
+        </div>
+        <div className="mx-2 justify-center text-center">
+          <button className="bg-black inline-flex justify-center items-center rounded shadow-sm font-semibold transition ease-in-out duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-sm w-full text-white h-12">Continuar</button>
+        </div>
+      </div>
+
     </div>
   );
 }
