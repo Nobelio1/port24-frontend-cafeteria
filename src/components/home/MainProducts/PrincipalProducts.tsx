@@ -83,9 +83,10 @@ const frappes: ProductCardProps[] = [
   },
 ];
 
+
 export default function PrincipalProducts() {
   return (
-    <div className="max-w-[1200px] mx-auto">
+    <div className="max-w-[1200px] mx-auto mt-6">
       <div className="flex gap-2 flex-col md:flex-row place-self-center">
         {coffees.map((coffee) => (
           <ProductCard key={coffee.id} {...coffee} />

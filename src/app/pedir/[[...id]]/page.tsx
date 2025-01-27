@@ -1,21 +1,24 @@
+"use client"
+
 import Image from "next/image";
 import { Pr3 } from "../../../../public";
+import { useRouter, useParams } from "next/navigation";
 
-interface PedirProps {
-  params: {
-    id: string[];
-  };
-  searchParams?: string;
-}
 
-export default async function Pedir(props: PedirProps) {
-  const { id } = props.params;
+export default function Pedir() {
+  const router = useRouter();
+  const {id} = useParams<{ id: string; title: string }>()
+
+  const closeModal = () => {
+    router.replace("/pedir", {scroll: false});
+  }
 
   if (id && id.length > 0) {
     return (
-      <div className="fixed z-[1000] inset-0 flex items-end  md:items-center justify-center bg-overlay">
+      <div className="fixed z-[1000] inset-0 flex items-end  md:items-center justify-center bg-overlay " onClick={closeModal}>
         <div
           className="
+              animate__animated animate__zoomIn animate__faster
               bg-white text-black relative flex flex-col w-full md:w-[calc(100vw-40px)] max-w-[1200px] h-full md:h-[600px] mt-5 md:mt-0 max-h-[98dvh] overflow-hidden rounded-2xl md:flex-row top-[10vh] transition-all ease-in duration-200 opacity-100 -translate-y-[10vh]"
         >
           <div className="close"></div>

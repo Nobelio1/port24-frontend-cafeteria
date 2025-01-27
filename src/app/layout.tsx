@@ -1,5 +1,6 @@
 import Header from "@/components/shared/Header/Header";
 import "./globals.css";
+import 'animate.css';
 import {  Montserrat } from "next/font/google";
 import Footer from "@/components/shared/Footer/Footer";
 

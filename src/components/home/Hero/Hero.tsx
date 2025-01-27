@@ -23,8 +23,8 @@ const imgSwiper = [
 
 export default function Hero() {
   return (
-    <div className="">
-      <Swiper pagination={true} modules={[Pagination]} className="">
+    <div>
+      <Swiper pagination={true} modules={[Pagination]}>
         {imgSwiper.map((img) => (
           <SwiperSlide key={img.id}>
             <Image
