@@ -14,7 +14,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         card: "#4c2c22",
         textFooter: "#470000",
-        overlay: "#00000080",
+        overlay: "#00000099",
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
