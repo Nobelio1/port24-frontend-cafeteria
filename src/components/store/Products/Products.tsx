@@ -18,7 +18,7 @@ export default function Products() {
         <span className="text-card font-bold text-3xl">Box Café</span>
         <div className="grid lg:grid-cols-2 gap-4 mt-6">
           {boxCafe.map((product) => (
-            <ProductCard key={product.id} {...product} />
+            <ProductCard key={product.id} {...product}/>
           ))}
         </div>
       </div>
