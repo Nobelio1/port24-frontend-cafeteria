@@ -13,7 +13,10 @@ const navLinks = [
     id: 2,
     name: "Cafetería",
     link: "/pedir",
-  },
+  }
+];
+
+/*
   {
     id: 3,
     name: "Choco",
@@ -24,7 +27,7 @@ const navLinks = [
     name: "Ubicacíon",
     link: "/locales",
   },
-];
+*/
 
 export default function Header() {
   return (
